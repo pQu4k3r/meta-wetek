@@ -4,7 +4,7 @@ S = "${WORKDIR}/libamcodec-75f23da/amcodec"
 
 SRC_URI = "https://raw.githubusercontent.com/PLi-metas/amlogic-libs/master/libamcodec-75f23da.tar.gz\
            file://add-vformat-hevc.patch \
-           file://libamplayer.pc \
+           file://libamcodec.pc \
 "
 
 SRC_URI[md5sum] = "2ff1cbc415271733e1241e8cde0b105e"
