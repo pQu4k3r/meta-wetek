@@ -1,2 +1,2 @@
 # meta-wetek
-WeTek BSP layer for PLi's OE
+WeTek BSP layer for Open Vision
