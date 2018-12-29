@@ -2,7 +2,7 @@ require wetek-libamadec.inc
 
 S = "${WORKDIR}/libamcodec-210755d/amadec"
 
-SRC_URI = "https://raw.githubusercontent.com/PLi-metas/amlogic-libs/master/libamcodec-210755d.tar.gz \
+SRC_URI = "https://raw.githubusercontent.com/OpenVisionE2/amlogic-libs/master/libamcodec-210755d.tar.gz \
            file://libamadec.pc \
 "
 

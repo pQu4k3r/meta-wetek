@@ -16,7 +16,7 @@ inherit autotools pkgconfig
 DEPENDS = "gstreamer wetek-gst-amlavsink wetek-libamcodec-${MACHINE} wetek-libamavutils-${MACHINE} wetek-libamplayer-${MACHINE}"
 RDEPENDS_{PN} = "wetek-libamavutils-${MACHINE}"
 
-SRC_URI = "https://raw.githubusercontent.com/PLi-metas/amlogic-libs/master/gst-aml-plugins-0.10.0.zip"
+SRC_URI = "https://raw.githubusercontent.com/OpenVisionE2/amlogic-libs/master/gst-aml-plugins-0.10.0.zip"
 
 SRC_URI[md5sum] = "3ff606387aecef5e2dc451fcb7fdc987"
 SRC_URI[sha256sum] = "e89795ae64e638845aa1c681e40c9e4059e847fd3855452a8d6824b3f87a16dc"

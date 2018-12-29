@@ -2,7 +2,7 @@ require wetek-libamplayer.inc
 
 S = "${WORKDIR}/libamcodec-210755d/amplayer"
 
-SRC_URI = "https://raw.githubusercontent.com/PLi-metas/amlogic-libs/master/libamcodec-210755d.tar.gz \
+SRC_URI = "https://raw.githubusercontent.com/OpenVisionE2/amlogic-libs/master/libamcodec-210755d.tar.gz \
            file://libamplayer.pc \
 "
 
