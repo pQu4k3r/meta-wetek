@@ -1,3 +1,5 @@
+BOX_BRAND = "wetek"
+
 IMAGE_CLASSES += "image_types_wetek"
 
 GST_VERSION = "0.10"
