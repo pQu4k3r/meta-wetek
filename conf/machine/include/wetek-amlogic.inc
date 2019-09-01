@@ -39,7 +39,7 @@ IMAGE_CMD_sdcard_append = "\
     rm -Rf ${IMAGEDIR}; \
     "
 
-MACHINE_FEATURES += "bluetooth fb usbhost vfat alsa dvb-c nolcd wetek-pli nogamma"
+MACHINE_FEATURES += "bluetooth fb usbhost vfat alsa dvb-c nolcd nogamma"
 
 PREFERRED_PROVIDER_jpeg = "libjpeg-turbo"
 PREFERRED_PROVIDER_jpeg-native = "libjpeg-turbo-native"
