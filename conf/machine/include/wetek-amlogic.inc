@@ -41,6 +41,8 @@ IMAGE_CMD_sdcard_append = "\
 
 MACHINE_FEATURES += "bluetooth fb usbhost vfat alsa dvb-c nolcd nogamma"
 
+MTD_BLACK  = "mmcblk0"
+
 PREFERRED_PROVIDER_jpeg = "libjpeg-turbo"
 PREFERRED_PROVIDER_jpeg-native = "libjpeg-turbo-native"
 
