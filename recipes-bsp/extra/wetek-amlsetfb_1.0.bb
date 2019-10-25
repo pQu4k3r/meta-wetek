@@ -2,7 +2,7 @@ SUMMARY = "SysV init scripts for Amlogic framebuffer set-up"
 DESCRIPTION = "Provides basic set-up for the amlogic framebuffer"
 SECTION = "base"
 
-COMPATIBLE_MACHINE = "wetekhub|wetekplay|wetekplay2"
+COMPATIBLE_MACHINE = "^(wetekhub|wetekplay|wetekplay2)$"
 
 include conf/license/license-gplv2.inc
 
