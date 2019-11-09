@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 SUMMARY = "Wetek mali driver for ${MACHINE}"
+=======
+SUMMARY = "Wetek Mali Video driver for ${MACHINE}"
+>>>>>>> 5c0998b6caba9ebccf997d9d143f18ade80754a6
 SECTION = "base"
 PRIORITY = "required"
 LICENSE = "GPLv2"

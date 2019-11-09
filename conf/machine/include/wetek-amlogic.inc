@@ -9,6 +9,10 @@ DVBSKYPROVIDER = "kernel"
 
 IMAGEDIR ?= "${MACHINE}"
 
+MACHINE_ESSENTIAL_EXTRA_RDEPENDS += "\
+    wetek-shutdown \
+    "
+
 MACHINE_EXTRA_RRECOMMENDS += "\
     wetek-libamplayer-${MACHINE} \
     wetek-libamavutils-${MACHINE} \
