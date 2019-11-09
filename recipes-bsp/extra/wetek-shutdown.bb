@@ -15,3 +15,5 @@ do_install() {
     install -d ${D}${sysconfdir}/init.d/
     install -m 0755 ${WORKDIR}/wetek-shutdown.sh ${D}${sysconfdir}/init.d/wetek-shutdown
 }
+
+COMPATIBLE_MACHINE = "^(wetekplay|wetekplay2|wetekhub)$"
