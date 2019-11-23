@@ -1,5 +1,7 @@
 SOC_FAMILY = "AMLS905"
 
+require conf/distro/multilib.inc
+
 # Amlogic defaults
 require conf/machine/include/wetek-amlogic.inc
 require conf/machine/include/arm/arch-armv8.inc
