@@ -63,3 +63,5 @@ PREFERRED_PROVIDER_virtual/kernel = "linux-wetek2"
 PREFERRED_VERSION_linux-wetek2 = "3.14.29"
 
 KERNEL_IMAGETYPE = "Image"
+
+MACHINE_FEATURES += "multilib"
