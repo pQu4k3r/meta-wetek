@@ -56,8 +56,6 @@ SDIMG = "${DEPLOY_DIR_IMAGE}/${IMAGE_NAME}.img"
 # Additional files and/or directories to be copied into the vfat partition from the IMAGE_ROOTFS.
 FATPAYLOAD ?= ""
 
-IMAGEDATESTAMP = "${@time.strftime('%Y.%m.%d',time.gmtime())}"
-
 IMAGE_CMD_sdcard () {
 
 	# Align partitions
@@ -110,7 +108,7 @@ IMAGE_CMD_sdcard () {
 
 
 	# Add stamp file
-	echo "${IMAGE_NAME}-${IMAGEDATESTAMP}" > ${WORKDIR}/image-version-info
+	echo "${IMAGE_NAME}" > ${WORKDIR}/image-version-info
 	mcopy -i ${WORKDIR}/boot.img -v ${WORKDIR}//image-version-info ::
 
 	# Burn Partitions
