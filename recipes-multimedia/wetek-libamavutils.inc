@@ -8,14 +8,14 @@ inherit lib_package pkgconfig
 
 EXTRA_OEMAKE = "\
     'CC=${CC}' \
-    'CFLAGS=-O2 -fPIC -DALSA_OUT -DENABLE_WAIT_FORMAT -I${S}/../amcodec/require -I${S}/require -I${S}' \
+    'CFLAGS=-O2 -fPIC -DALSA_OUT -DENABLE_WAIT_FORMAT -I${S}/../amcodec/include -I${S}/include -I${S}' \
     'LDFLAGS=-shared -lm -lrt' \
 "
 
 do_install() {
     install -d ${D}${includedir}
     install -d ${D}${libdir}
-    cp -PR ${S}/require ${D}/usr
+    cp -PR ${S}/include ${D}/usr
     install -m 0755 ${S}/libamavutils.so ${D}/${libdir}
 }
 
