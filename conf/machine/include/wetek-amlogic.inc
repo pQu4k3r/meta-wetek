@@ -59,7 +59,7 @@ EXTRA_OECONF_append_pn-tuxtxt-enigma2 = " --with-fbdev=/dev/fb2"
 CC_append_pn-showiframe = " -DHAVE_AMLOGIC -I${STAGING_INCDIR}/amlogic/amcodec -lamcodec"
 DEPENDS_append_pn-showiframe = " wetek-libamcodec-${MACHINE}"
 
-include conf/machine/include/autoload-filesystems.inc
+require conf/machine/include/autoload-filesystems.inc
 
 # We know about rtc
-include conf/machine/include/build-extras.inc
+require conf/machine/include/build-extras.inc
