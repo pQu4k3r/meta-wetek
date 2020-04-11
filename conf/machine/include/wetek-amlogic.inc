@@ -39,7 +39,6 @@ IMAGE_CMD_sdcard_append = "\
     cd ${DEPLOY_DIR_IMAGE}; \
     zip ${IMAGE_NAME}_sdcard.zip ${IMAGEDIR}/*; \
     rm -f ${DEPLOY_DIR_IMAGE}/*.ext4; \
-    rm -f ${DEPLOY_DIR_IMAGE}/*.manifest; \
     rm -f ${DEPLOY_DIR_IMAGE}/*.img; \
     rm -Rf ${IMAGEDIR}; \
     "
