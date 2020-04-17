@@ -1,4 +1,4 @@
-SUMMARY = "Wetek Enigma2 wifi driver for ${MACHINE}"
+SUMMARY = "WeTek Enigma2 wifi driver for ${MACHINE}"
 SECTION = "base"
 PRIORITY = "required"
 LICENSE = "GPLv2"

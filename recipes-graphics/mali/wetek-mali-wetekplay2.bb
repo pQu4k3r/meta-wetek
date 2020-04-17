@@ -1,4 +1,4 @@
-SUMMARY = "Wetek Mali Video driver for ${MACHINE}"
+SUMMARY = "WeTek Mali Video driver for ${MACHINE}"
 SECTION = "base"
 PRIORITY = "required"
 LICENSE = "GPLv2"

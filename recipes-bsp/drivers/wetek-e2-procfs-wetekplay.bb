@@ -1,4 +1,4 @@
-SUMMARY = "Wetek Enigma2 procfs drivers for ${MACHINE}"
+SUMMARY = "WeTek Enigma2 procfs drivers for ${MACHINE}"
 SECTION = "base"
 PRIORITY = "required"
 LICENSE = "CLOSED"
