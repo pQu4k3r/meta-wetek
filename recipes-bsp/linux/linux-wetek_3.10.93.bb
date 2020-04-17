@@ -22,7 +22,7 @@ COMPATIBLE_MACHINE = "^(wetekplay)$"
 
 SRC_URI = "http://source.mynonpublic.com/wetek/linux-wetek-3.10.y-master.tar.gz \
     file://defconfig \
-    file://kernel-add-support-for-gcc6.patch \
+    file://${OPENVISION_BASE}/openvision-oe/recipes-linux/kernel-patches/kernel-add-support-for-gcc6.patch \
 "
 
 S = "${WORKDIR}/linux-wetek-3.10.y-master"
