@@ -24,7 +24,7 @@ S = "${WORKDIR}/gst-aml-plugins-0.11.0"
 
 CFLAGS += " -O2 -fPIC -I${S}/common/include  -I${S}/common/include/amports  -I${S}/common/include/ppmgr \
     -I${STAGING_INCDIR} -I${S}/common/amstreaminfo -I${S}/common/amlsysctl  "
-LDFLAGS =+ " -L${STAGING_LIBDIR} -L${STAGING_BASELIBDIR} "
+LDFLAGS += " -L${STAGING_LIBDIR} -L${STAGING_BASELIBDIR} "
 
 FILES_${PN} += "${libdir}/* ${libdir}/libcommon.a"
 FILES_${PN}-dbg += "${libdir}/gstreamer-0.10/.debug $"

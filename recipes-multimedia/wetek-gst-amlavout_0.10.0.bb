@@ -23,9 +23,9 @@ SRC_URI[sha256sum] = "e89795ae64e638845aa1c681e40c9e4059e847fd3855452a8d6824b3f8
 
 S = "${WORKDIR}/gst-aml-plugins-0.10.0"
 
-CFLAGS =+ " -O2 -fPIC -I${STAGING_INCDIR} -I${S}/include  -I${S}/include/amports  -I${S}/common/include/ppmgr \
+CFLAGS += " -O2 -fPIC -I${STAGING_INCDIR} -I${S}/include  -I${S}/include/amports  -I${S}/common/include/ppmgr \
 -I${S}/amlaudio -I${S}/amlvideo "
-LDFLAGS =+ " -L${STAGING_LIBDIR} -L${STAGING_BASELIBDIR} " 
+LDFLAGS += " -L${STAGING_LIBDIR} -L${STAGING_BASELIBDIR} " 
 
 FILES_${PN} += "${libdir}"
 FILES_${PN}-dbg += "${libdir}/gstreamer-0.10/.debug $"
