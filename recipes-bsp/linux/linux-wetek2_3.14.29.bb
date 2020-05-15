@@ -22,7 +22,7 @@ COMPATIBLE_MACHINE = "^(wetekplay2|wetekhub)$"
 
 SRC_URI = "https://github.com/wetek-enigma/linux-amlogic/archive/amlogic-3.14.y.tar.gz \
    file://defconfig \
-   file://${OPENVISION_BASE}/openvision-oe/recipes-linux/kernel-patches/kernel-add-support-for-gcc6.patch \
+   file://${OPENVISION_BASE}/openvision-oe/recipes-linux/kernel-patches/kernel-add-support-for-gcc${VISIONGCCVERSION}.patch \
    file://boot.ini \
    file://uInitrd \
 "
