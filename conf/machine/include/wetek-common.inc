@@ -15,10 +15,6 @@ MACHINE_ESSENTIAL_EXTRA_RDEPENDS += "\
     wetek-gst-app \
     wetek-gst-amlavout \
     gst-fluendo-mpegdemux \
-    "
-
-MACHINE_ESSENTIAL_EXTRA_RRECOMMENDS += "\
-    kernel-module-cdfs \
     kernel-module-sysfillrect \
     kernel-module-syscopyarea \
     kernel-module-mceusb \
@@ -30,7 +26,6 @@ MACHINE_ESSENTIAL_EXTRA_RRECOMMENDS += "\
     kernel-module-bluetooth \
     kernel-module-6lowpan-iphc \
     kernel-module-libcrc32c \
-    kernel-module-xfs \
     wetek-amlsetfb \
     amremote \
     "
