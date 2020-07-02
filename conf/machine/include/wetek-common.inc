@@ -19,7 +19,7 @@ MACHINE_ESSENTIAL_EXTRA_RDEPENDS += "\
     kernel-module-syscopyarea \
     kernel-module-mceusb \
     kernel-module-rc-core \
-    kernel-module-CH341 \
+    kernel-module-ch341 \
     kernel-module-cfg80211 \
     kernel-module-rfcomm \
     kernel-module-hidp \
@@ -38,7 +38,7 @@ KERNEL_MODULE_AUTOLOAD += "\
     rc-core \
     mali \
     dhd \
-    CH341 \
+    ch341 \
     rfcomm \
     hidp \
     cfg80211 \
