@@ -15,17 +15,7 @@ MACHINE_ESSENTIAL_EXTRA_RDEPENDS += "\
     wetek-gst-app \
     wetek-gst-amlavout \
     gst-fluendo-mpegdemux \
-    kernel-module-sysfillrect \
-    kernel-module-syscopyarea \
-    kernel-module-mceusb \
-    kernel-module-rc-core \
-    kernel-module-ch341 \
-    kernel-module-cfg80211 \
-    kernel-module-rfcomm \
-    kernel-module-hidp \
-    kernel-module-bluetooth \
-    kernel-module-6lowpan-iphc \
-    kernel-module-libcrc32c \
+    kernel-modules \
     wetek-amlsetfb \
     amremote \
     "
