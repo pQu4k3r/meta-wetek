@@ -7,8 +7,6 @@ GST_VERSION = "0.10"
 DVBPROVIDER = "kernel"
 DVBSKYPROVIDER = "kernel"
 
-IMAGEDIR ?= "${MACHINE}"
-
 MACHINE_ESSENTIAL_EXTRA_RDEPENDS += "\
     wetek-shutdown \
     "
