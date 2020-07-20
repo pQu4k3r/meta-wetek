@@ -41,7 +41,7 @@ IMAGE_CMD_sdcard_append = "\
     rm -Rf ${IMAGEDIR}; \
     "
 
-MACHINE_FEATURES += "bluetooth fb usbhost vfat alsa dvb-c nolcd nogamma"
+MACHINE_FEATURES += "bluetooth fb usbhost vfat alsa dvb-c nolcd nogamma HDMI"
 
 MTD_BLACK  = "mmcblk0"
 
