@@ -35,7 +35,6 @@ KERNEL_MODULE_AUTOLOAD += "\
     bluetooth \
     6lowpan-iphc \
     libcrc32c \
-    xfs \
 "
 
 module_conf_dhd = "options dhd firmware_path=/lib/firmware/brcm/ nvram_path=/lib/firmware/brcm/"
