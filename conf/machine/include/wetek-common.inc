@@ -1,4 +1,4 @@
-SOC_FAMILY = "AMLS905"
+SOC_FAMILY = "amls905"
 
 require conf/distro/multilib.inc
 
@@ -49,3 +49,5 @@ PREFERRED_VERSION_linux-wetek2 = "3.14.29"
 KERNEL_IMAGETYPE = "Image"
 
 MACHINE_FEATURES += "multilib"
+
+EXTRA_ALSA = "amls905"
