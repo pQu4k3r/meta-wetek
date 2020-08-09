@@ -15,17 +15,17 @@ DEPENDS = "xz-native bc-native u-boot-mkimage-native virtual/${TARGET_PREFIX}gcc
 # Avoid issues with Amlogic kernel binary components
 INHIBIT_PACKAGE_STRIP = "1"
 INHIBIT_PACKAGE_DEBUG_STRIP = "1"
-LINUX_VERSION ?= "3.14.29"
+LINUX_VERSION ?= "${KERNELVERSION}"
 LINUX_VERSION_EXTENSION ?= "amlogic"
 
 COMPATIBLE_MACHINE = "^(wetekplay2|wetekhub)$"
 
 SRC_URI = "https://github.com/wetek-enigma/linux-amlogic/archive/amlogic-3.14.y.tar.gz \
-   file://defconfig \
-   file://${OPENVISION_BASE}/meta-openvision/recipes-linux/kernel-patches/kernel-add-support-for-gcc${VISIONGCCVERSION}.patch \
-   file://boot.ini \
-   file://uInitrd \
-"
+	file://defconfig \
+	file://${OPENVISION_BASE}/meta-openvision/recipes-linux/kernel-patches/kernel-add-support-for-gcc${VISIONGCCVERSION}.patch \
+	file://boot.ini \
+	file://uInitrd \
+	"
 
 S = "${WORKDIR}/linux-amlogic-amlogic-3.14.y"
 B = "${WORKDIR}/build"

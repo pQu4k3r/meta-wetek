@@ -8,7 +8,7 @@ PACKAGE_ARCH = "${MACHINE_ARCH}"
 
 COMPATIBLE_MACHINE = "^(wetekplay2|wetekhub)$"
 
-KV = "3.14.29"
+KV = "${KERNELVERSION}"
 SRCDATE = "20161023"
 
 PV = "${KV}+${SRCDATE}"

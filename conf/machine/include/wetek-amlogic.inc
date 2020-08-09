@@ -8,15 +8,15 @@ DVBPROVIDER = "kernel"
 DVBSKYPROVIDER = "kernel"
 
 MACHINE_ESSENTIAL_EXTRA_RDEPENDS += "\
-    wetek-shutdown \
-    "
+	wetek-shutdown \
+	"
 
 MACHINE_EXTRA_RRECOMMENDS += "\
-    wetek-libamplayer-${MACHINE} \
-    wetek-libamavutils-${MACHINE} \
-    wetek-libamadec-${MACHINE} \
-    wetek-libamcodec-${MACHINE} \
-    "
+	wetek-libamplayer-${MACHINE} \
+	wetek-libamavutils-${MACHINE} \
+	wetek-libamadec-${MACHINE} \
+	wetek-libamcodec-${MACHINE} \
+	"
 
 IMAGE_FSTYPES += "sdcard"
 IMAGE_ROOTFS_SIZE = "976562"
@@ -55,7 +55,6 @@ DEPENDS_append_pn-enigma2 = " libdvbcsa wetek-libamcodec-${MACHINE} wetek-libama
 EXTRA_OECONF_append_pn-tuxtxt-enigma2 = " --with-fbdev=/dev/fb2"
 CC_append_pn-showiframe = " -DHAVE_AMLOGIC -I${STAGING_INCDIR}/amlogic/amcodec -lamcodec"
 DEPENDS_append_pn-showiframe = " wetek-libamcodec-${MACHINE}"
-
 
 # We know about rtc
 MACHINE_FEATURES_BACKFILL_CONSIDERED += "rtc"

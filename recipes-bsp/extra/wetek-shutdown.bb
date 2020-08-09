@@ -1,6 +1,5 @@
 require conf/license/license-gplv2.inc
 
-PV = "1.0"
 
 SRC_URI = " file://wetek-shutdown.sh"
 
