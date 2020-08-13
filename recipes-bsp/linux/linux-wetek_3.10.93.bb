@@ -59,7 +59,7 @@ do_install_append () {
     ln -s ${STAGING_KERNEL_DIR}/arch/arm/mach-meson6 ${STAGING_KERNEL_DIR}/include/mach
     touch ${STAGING_KERNEL_DIR}/include/linux/smp_lock.h
     # remove *.z from installation path those are object files from amlogic for binary modules
-    find ${D}/usr/src/kernel -type f -name "*.z" | xargs rm -f
+    find ${D}${prefix}/src/kernel -type f -name "*.z" | xargs rm -f
 }
 
 do_rm_work() {
