@@ -1498,7 +1498,7 @@ CONFIG_PPPOPNS=y
 CONFIG_PPP_ASYNC=m
 # CONFIG_PPP_SYNC_TTY is not set
 # CONFIG_SLIP is not set
-CONFIG_SLHC=y
+CONFIG_SLHC=m
 
 #
 # USB Network Adapters
