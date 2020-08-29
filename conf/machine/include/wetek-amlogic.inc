@@ -9,9 +9,6 @@ DVBSKYPROVIDER = "kernel"
 
 MACHINE_ESSENTIAL_EXTRA_RDEPENDS += "\
 	wetek-shutdown \
-	"
-
-MACHINE_EXTRA_RRECOMMENDS += "\
 	wetek-libamplayer-${MACHINE} \
 	wetek-libamavutils-${MACHINE} \
 	wetek-libamadec-${MACHINE} \
