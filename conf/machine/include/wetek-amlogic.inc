@@ -27,16 +27,20 @@ UBOOT_ENTRYPOINT  = "0x80008000"
 UBOOT_LOADADDRESS = "0x80008000"
 
 IMAGE_CMD_sdcard_append = " \
-    mkdir -p ${DEPLOY_DIR_IMAGE}/${IMAGEDIR}; \
-    mv ${DEPLOY_DIR_IMAGE}/${IMAGE_NAME}.img ${DEPLOY_DIR_IMAGE}/${IMAGEDIR}/${IMAGE_NAME}.img; \
-    echo ${IMAGE_NAME} > ${DEPLOY_DIR_IMAGE}/${IMAGEDIR}/imageversion; \
-    rm -f ${DEPLOY_DIR_IMAGE}/*.zip; \
-    cd ${DEPLOY_DIR_IMAGE}; \
-    zip ${IMAGE_NAME}_sdcard.zip ${IMAGEDIR}/*; \
-    rm -f ${DEPLOY_DIR_IMAGE}/*.ext4; \
-    rm -f ${DEPLOY_DIR_IMAGE}/*.img; \
-    rm -Rf ${IMAGEDIR}; \
-    "
+	mkdir -p ${DEPLOY_DIR_IMAGE}/${IMAGEDIR}; \
+	mv ${DEPLOY_DIR_IMAGE}/${IMAGE_NAME}.img ${DEPLOY_DIR_IMAGE}/${IMAGEDIR}/${IMAGE_NAME}.img; \
+	echo ${IMAGE_NAME} > ${DEPLOY_DIR_IMAGE}/${IMAGEDIR}/imageversion; \
+	rm -f ${DEPLOY_DIR_IMAGE}/*.zip; \
+	cd ${DEPLOY_DIR_IMAGE}; \
+	zip ${IMAGE_NAME}_sdcard.zip ${IMAGEDIR}/*; \
+	rm -f ${DEPLOY_DIR_IMAGE}/*.ext4; \
+	rm -f ${DEPLOY_DIR_IMAGE}/*.img; \
+	rm -Rf ${IMAGEDIR}; \
+	"
+
+IMAGE_CMD_prepend = "\
+	rm -Rf ${IMAGE_ROOTFS}/tmp/*; \
+	"
 
 MACHINE_FEATURES += "bluetooth fb usbhost vfat alsa dvb-c nolcd nogamma HDMI vfdsymbol"
 
