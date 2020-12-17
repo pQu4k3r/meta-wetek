@@ -47,7 +47,6 @@ do_image_sdcard[depends] += " \
     mtools-native:do_populate_sysroot \
     e2fsprogs-native:do_populate_sysroot \
     virtual/kernel:do_populate_sysroot \
-    ${@bb.utils.contains("KERNEL_IMAGETYPE", "uImage", "u-boot:do_populate_sysroot", "",d)} \
     "
 
 # SD card image name
