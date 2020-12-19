@@ -49,7 +49,7 @@ do_compile_prepend () {
 }
 
 do_compile_append () {
-    cp ${STAGING_KERNEL_DIR}/arch/arm/boot/dts/amlogic/${KERNEL_DEVICETREE} ${B}/arch/arm/boot/
+    cp -f ${STAGING_KERNEL_DIR}/arch/arm/boot/dts/amlogic/${KERNEL_DEVICETREE} ${B}/arch/arm/boot/
 }
 
 # Put debugging files into dbg package

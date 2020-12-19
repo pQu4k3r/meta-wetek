@@ -23,7 +23,7 @@ do_install() {
     install -d ${D}${includedir}/amlogic/player
     install -d ${D}${libdir}
     install -m 0755  ${S}/libamplayer.so  ${D}${libdir}
-    cp -pR  ${S}/player/include/* ${D}${includedir}/amlogic/player
+    cp -fpR ${S}/player/include/* ${D}${includedir}/amlogic/player
 }
 
 FILES_${PN} = "${libdir}/* "

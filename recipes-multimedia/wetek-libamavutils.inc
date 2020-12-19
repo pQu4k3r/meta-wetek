@@ -15,7 +15,7 @@ EXTRA_OEMAKE = "\
 do_install() {
     install -d ${D}${includedir}
     install -d ${D}${libdir}
-    cp -PR ${S}/include ${D}${prefix}
+    cp -fPR ${S}/include ${D}${prefix}
     install -m 0755 ${S}/libamavutils.so ${D}${libdir}
 }
 
