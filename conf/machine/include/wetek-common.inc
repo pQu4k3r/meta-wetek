@@ -23,7 +23,6 @@ MACHINE_ESSENTIAL_EXTRA_RDEPENDS += "\
 	"
 
 KERNEL_MODULE_AUTOLOAD += "\
-	e2-procfs \
 	sysfillrect \
 	syscopyarea \
 	mceusb \

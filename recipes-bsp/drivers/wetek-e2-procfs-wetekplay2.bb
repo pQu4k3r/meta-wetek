@@ -24,7 +24,11 @@ do_compile() {
 do_install() {
 	install -d ${D}${nonarch_base_libdir}/modules/${KV}/extra
 	install -m 0755 ${WORKDIR}/e2-procfs.ko ${D}${nonarch_base_libdir}/modules/${KV}/extra/
+	install -d ${D}${sysconfdir}/modules-load.d
+	echo "e2-procfs" > ${D}${sysconfdir}/modules-load.d/zeprocfs.conf
 }
 
 do_package_qa() {
 }
+
+FILES_${PN} += "${sysconfdir}"
