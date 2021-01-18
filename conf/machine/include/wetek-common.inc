@@ -2,8 +2,6 @@ KERNELVERSION = "3.14.29"
 
 SOC_FAMILY = "amls905"
 
-require conf/distro/multilib.inc
-
 # Amlogic defaults
 require conf/machine/include/wetek-amlogic.inc
 require conf/machine/include/arm/arch-armv8.inc
@@ -46,7 +44,5 @@ PREFERRED_PROVIDER_virtual/kernel = "linux-wetek2"
 PREFERRED_VERSION_linux-wetek2 = "${KERNELVERSION}"
 
 KERNEL_IMAGETYPE = "Image"
-
-MACHINE_FEATURES += "multilib"
 
 EXTRA_ALSA = "amls905"
