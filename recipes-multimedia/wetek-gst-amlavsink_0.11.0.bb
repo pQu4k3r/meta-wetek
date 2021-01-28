@@ -1,12 +1,12 @@
 SUMMARY = "GStreamer AML AVsink plugin"
-#  Amlogic GStreamer plugins to send audio es to aml dsp and video es to aml hw decoder. 
+#  Amlogic GStreamer plugins to send audio es to aml dsp and video es to aml hw decoder.
 #  decode and render will be complete at kernel level.
 SECTION = "multimedia"
 LICENSE = "MIT"
 LIC_FILES_CHKSUM = "file://${COMMON_LICENSE_DIR}/MIT;md5=0835ade698e0bcf8506ecda2f7b4f302"
 PACKAGE_ARCH = "${MACHINE_ARCH}"
 
-COMPATIBLE_MACHINE = "^(wetekhub|wetekplay|wetekplay2)$"
+COMPATIBLE_MACHINE = "^(wetekplay)$"
 
 inherit autotools pkgconfig
 

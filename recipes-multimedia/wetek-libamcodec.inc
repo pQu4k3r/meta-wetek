@@ -4,8 +4,8 @@ PACKAGE_ARCH = "${MACHINE_ARCH}"
 LICENSE = "MIT"
 LIC_FILES_CHKSUM = "file://${COMMON_LICENSE_DIR}/MIT;md5=0835ade698e0bcf8506ecda2f7b4f302"
 
-DEPENDS = "wetek-libamadec-${MACHINE}"
-RDEPENDS_${PN} = "wetek-libamadec-${MACHINE}"
+DEPENDS = "wetek-libamadec"
+RDEPENDS_${PN} = "wetek-libamadec"
 
 inherit lib_package pkgconfig
 

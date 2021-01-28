@@ -5,8 +5,8 @@ LIC_FILES_CHKSUM = "file://${S}/COPYING;md5=d7810fab7487fb0aad327b76f1be7cd7"
 
 PACKAGE_ARCH = "${MACHINE_ARCH}"
 
-SRC_URI[md5sum] = "a046dea5803c0f935e6ad62f39138857"
-SRC_URI[sha256sum] = "6bc4cf8e0884a7955c6e0b6a4293525664631546f19b9222e4bf472120bd3d85"
+SRC_URI[md5sum] = "8fecf7f7b7547844ef9aa97fc54dd3ee"
+SRC_URI[sha256sum] = "b2e84dd8b3d1543cdfe147f4d34c2a0a89b9b27f2f1011aa810c8098996b7daa"
 
 inherit kernel machine_kernel_pr samba_change_dialect
 
@@ -20,7 +20,7 @@ LINUX_VERSION_EXTENSION ?= "amlogic"
 
 COMPATIBLE_MACHINE = "^(wetekplay2|wetekhub)$"
 
-SRC_URI = "https://github.com/wetek-enigma/linux-amlogic/archive/amlogic-3.14.y.tar.gz \
+SRC_URI = "https://github.com/LibreELEC/linux-amlogic/archive/amlogic-3.14.y.tar.gz \
 	file://defconfig \
 	file://${OPENVISION_BASE}/meta-openvision/recipes-linux/kernel-patches/kernel-add-support-for-gcc${VISIONGCCVERSION}.patch \
 	file://boot.ini \
